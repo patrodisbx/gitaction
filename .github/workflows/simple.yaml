@@ -12,8 +12,5 @@ jobs:
       - name: list all files
         run: dir
 
-      - name: login to vctl
-        run: D:/a/gitaction/gitaction/vctl.exe login https://vsystem.ingress.dh-ifc1k6ng.di-us-east.shoot.live.k8s-hana.ondemand.com disbxt01 DIAPIUSR -p DI@apiuser123
-
 
       
