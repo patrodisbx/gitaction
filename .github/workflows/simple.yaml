@@ -4,14 +4,9 @@ on: [push]
 
 jobs: 
   run-shell-command:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      - name: echo a string
-        run: echo "Hello world"
+      - name: login to vctl
+        run: vctl/vctl.exe login https://vsystem.ingress.dh-ifc1k6ng.di-us-east.shoot.live.k8s-hana.ondemand.com disbxt01 DIAPIUSR -p DI@apiuser123
 
-      - name: multilien script
-        run: |
-          node -v
-          npm -v
-      - name: Directory
-        run: pwd
+      
