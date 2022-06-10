@@ -7,6 +7,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: login to vctl
-        run: vctl/vctl.exe login https://vsystem.ingress.dh-ifc1k6ng.di-us-east.shoot.live.k8s-hana.ondemand.com disbxt01 DIAPIUSR -p DI@apiuser123
+        run: vctl.exe login https://vsystem.ingress.dh-ifc1k6ng.di-us-east.shoot.live.k8s-hana.ondemand.com disbxt01 DIAPIUSR -p DI@apiuser123
 
       
