@@ -3,10 +3,14 @@ name: Simple Shell Command
 on: [push]
 
 jobs: 
-  run-shell-command:
+  run-powershell-command:
     runs-on: windows-latest
     steps:
+      - name: Download vctl
+        run: Invoke-WebRequest -Uri https://raw.githubusercontent.com/patrodisbx/gitaction/development/vctl/vctl.exe -Outfile ./vctl.exe
+
       - name: login to vctl
         run: vctl.exe login https://vsystem.ingress.dh-ifc1k6ng.di-us-east.shoot.live.k8s-hana.ondemand.com disbxt01 DIAPIUSR -p DI@apiuser123
+
 
       
