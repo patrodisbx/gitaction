@@ -8,3 +8,8 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello world"
+
+      - name: multilien script
+        run: |
+          node -v
+          npm -v
